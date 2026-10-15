@@ -1,0 +1,44 @@
+{
+  "name": "workbuddy-wecom-bridge",
+  "version": "1.0.0",
+  "description": "Use a local WorkBuddy desktop session to call WeCom (Enterprise WeChat) APIs — contacts, docs, sheets, todos, drive, calendar, meetings, mail, and chat via the message agent.",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "wbipc": "scripts/wbipc.js",
+    "wbipc-pipes": "scripts/pipes.js",
+    "wecom": "scripts/wecom.js",
+    "wecom-a2a": "scripts/a2a.js"
+  },
+  "main": "lib/wbipc.js",
+  "files": [
+    "lib/",
+    "scripts/",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "pipes": "node scripts/pipes.js",
+    "whoami": "node scripts/wecom.js identity whoami",
+    "card": "node scripts/a2a.js card",
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "wecom",
+    "wechat-work",
+    "enterprise-wechat",
+    "workbuddy",
+    "a2a",
+    "agent",
+    "skill",
+    "mcp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/workbuddy-wecom-bridge.git"
+  }
+}

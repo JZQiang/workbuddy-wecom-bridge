@@ -1,0 +1,22 @@
+# Dependencies (this project has none, but just in case)
+node_modules/
+package-lock.json
+
+# Never commit credentials or session material
+.env
+.env.*
+*.enc
+.encryption_key
+endpoint.json
+cli-env/
+
+# Test fixtures that might contain real chat content
+test/fixtures/private/
+*.private.json
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
